@@ -19,7 +19,7 @@ void main() {
   final noFolder = <String, Object?>{'folderUri': null};
   final usbFolder = <String, Object?>{
     'folderUri': 'content://usb/tree/1',
-    'folderName': 'Backup Inventar+',
+    'folderName': 'Backup Tally',
     'folderAccessible': true,
     'destination': 'usb',
     'lastAutoAt': DateTime(2026, 9, 24, 0, 1).millisecondsSinceEpoch,
@@ -99,7 +99,7 @@ void main() {
     await tester.pumpAndSettle();
     final pick = calls.firstWhere((c) => c.method == 'pickFolder');
     expect(pick.arguments['destination'], 'usb');
-    expect(find.text('Backup Inventar+'), findsOneWidget);
+    expect(find.text('Backup Tally'), findsOneWidget);
     expect(find.text('Folderul de backup a fost setat.'), findsOneWidget);
   });
 

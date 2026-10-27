@@ -19,14 +19,14 @@ void main() {
     await tester.pumpWidget(const InventarPlusApp());
     await tester.pump();
 
-    expect(find.text('Inventar+'), findsWidgets);
+    expect(find.text('Tally'), findsWidgets);
     expect(find.byIcon(Icons.add_circle_rounded), findsOneWidget);
   });
 
   group('versiunea aplicației', () {
     setUp(() {
       PackageInfo.setMockInitialValues(
-        appName: 'Inventar+',
+        appName: 'Tally',
         packageName: 'app.sayitapp.inventar_plus',
         version: '1.1.0',
         buildNumber: '5',

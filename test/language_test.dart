@@ -85,7 +85,7 @@ void main() {
       await tester.pumpWidget(const InventarPlusApp());
       await tester.pumpAndSettle();
 
-      expect(find.text('Inventar+'), findsWidgets);
+      expect(find.text('Tally'), findsWidgets);
       expect(find.text('Report'), findsOneWidget);
       expect(find.text('SMS message'), findsOneWidget);
       expect(find.text('Name'), findsOneWidget);

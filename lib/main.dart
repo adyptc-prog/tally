@@ -68,7 +68,7 @@ int alertLevelFor(Product p) {
 }
 
 // ─── Serviciu alerte (notificare push imediată + SMS imediat) ────────────────
-// Spre deosebire de Organizator, alertele nu mai sunt programate la o oră
+// Spre deosebire de Appunta, alertele nu mai sunt programate la o oră
 // fixă (fără AlarmManager) — se declanșează instant, o singură dată, în
 // momentul în care o mișcare de stoc face produsul să treacă la un nivel
 // de alertă mai grav (edge-triggered).
@@ -559,7 +559,7 @@ class InventarPlusApp extends StatelessWidget {
   Widget _buildApp(String lang) {
     return MaterialApp(
       key: ValueKey(lang),
-      title: 'Inventar+',
+      title: 'Tally',
       debugShowCheckedModeBanner: false,
       locale: Locale(lang),
       supportedLocales: const [Locale('ro'), Locale('en')],
@@ -961,9 +961,9 @@ class _InventarPageState extends State<InventarPage>
           Text(tr('Activare Licență', 'License activation')),
         ]),
         content: Text(
-          tr('A fost detectat un fișier de licență Inventar+.\n\n'
+          tr('A fost detectat un fișier de licență Tally.\n\n'
           'Doriți să activați aplicația acum?',
-          'An Inventar+ license file was detected.\n\n'
+          'A Tally license file was detected.\n\n'
           'Do you want to activate the app now?'),
         ),
         actions: [
@@ -1108,7 +1108,7 @@ class _InventarPageState extends State<InventarPage>
               ),
               const SizedBox(height: 12),
               Text(
-                tr('Cumpără o licență pe voltacademy.app/inventarplus.html folosind codul de instalare de mai jos, apoi importă fișierul descărcat:', 'Buy a license at voltacademy.app/inventarplus.html using the installation code below, then import the downloaded file:'),
+                tr('Cumpără o licență pe voltacademy.app/tally.html folosind codul de instalare de mai jos, apoi importă fișierul descărcat:', 'Buy a license at voltacademy.app/tally.html using the installation code below, then import the downloaded file:'),
                 style: TextStyle(fontSize: 13),
               ),
               const SizedBox(height: 8),
@@ -1171,9 +1171,9 @@ class _InventarPageState extends State<InventarPage>
               const SizedBox(height: 8),
               Text(
                 tr('Ai deja un fișier .invtoken vechi de la Volt Academy?\n'
-                'Deschide-l din WhatsApp sau Files și alege "Inventar+".',
+                'Deschide-l din WhatsApp sau Files și alege "Tally".',
                 'Do you already have an old .invtoken file from Volt Academy?\n'
-                'Open it from WhatsApp or Files and choose "Inventar+".'),
+                'Open it from WhatsApp or Files and choose "Tally".'),
                 style: TextStyle(fontSize: 11, color: Colors.grey),
               ),
             ],
@@ -1976,7 +1976,7 @@ class _InventarPageState extends State<InventarPage>
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Inventar+'),
+        title: const Text('Tally'),
         actions: [
           if (Platform.isAndroid)
             IconButton(
@@ -2744,7 +2744,7 @@ class _InventarPageState extends State<InventarPage>
             onPressed: () {
               final text = buildExportText(
                   all, period, activeItems.length, deletedItems.length);
-              SharePlus.instance.share(ShareParams(text: text, subject: tr('Raport Inventar+', 'Inventar+ report')));
+              SharePlus.instance.share(ShareParams(text: text, subject: tr('Raport Tally', 'Tally report')));
             },
           ),
           FilledButton(

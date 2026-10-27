@@ -1,4 +1,4 @@
-# Inventar+
+# Tally
 
 **Stock management with barcode scanning, low-stock alerts and SMS notifications.**
 No server. Works offline. No accounts.
@@ -9,9 +9,9 @@ No server. Works offline. No accounts.
 
 ---
 
-## What is Inventar+?
+## What is Tally?
 
-Inventar+ is an open-source Flutter app for Android that keeps the stock of a small shop,
+Tally is an open-source Flutter app for Android that keeps the stock of a small shop,
 warehouse or workshop on the phone. You add products by scanning their barcode, and the app
 warns you when a product drops below its alert threshold or minimum stock. It can text clients
 or suppliers, and keep a second phone in sync. Everything runs on the phone, with no server and
@@ -60,15 +60,15 @@ The complete source code, including the 30-day trial check, is published here un
 don't depend on buying anything.
 
 What is sold is an **activation license**: a signed file, tied to one install code (Business ID),
-that unlocks the app after the 30-day free trial in the Inventar+ app distributed by Volt Academy
-(the Android APK available at [voltacademy.app/inventarplus.html](https://voltacademy.app/inventarplus.html)).
+that unlocks the app after the 30-day free trial in the Tally app distributed by Volt Academy
+(the Android APK available at [voltacademy.app/tally.html](https://voltacademy.app/tally.html)).
 
 | Period | Requirement |
 |---|---|
 | First 30 days after install | Free, all features |
 | After the trial | Activation license — 30, 60 or 180 days, or permanent |
 
-Licenses are bought at [voltacademy.app/inventarplus.html](https://voltacademy.app/inventarplus.html#licentiere),
+Licenses are bought at [voltacademy.app/tally.html](https://voltacademy.app/tally.html#licentiere),
 where current prices are listed. Expirable licenses bought for the same install code add up, and the
 license becomes permanent automatically once their total reaches the price of a permanent license.
 
@@ -87,7 +87,7 @@ Questions about licenses: [voltacademy.app/contact.html](https://voltacademy.app
 
 ## Platform Support
 
-Inventar+ is built for **Android** only. SMS, sync, backup and license import use Android
+Tally is built for **Android** only. SMS, sync, backup and license import use Android
 platform channels.
 
 ---
@@ -101,8 +101,8 @@ platform channels.
 ### Run
 
 ```bash
-git clone https://github.com/adyptc-prog/inventarplus.git
-cd inventarplus
+git clone https://github.com/adyptc-prog/tally.git
+cd tally
 flutter pub get
 flutter run
 ```
@@ -142,7 +142,7 @@ All contributions must be compatible with the AGPL-3.0 license.
 
 ## License
 
-**Inventar+ — Stock Management App**<br>
+**Tally — Stock Management App**<br>
 Copyright (C) 2026 Adrian Petcu — Volt Academy
 
 This program is free software: you can redistribute it and/or modify

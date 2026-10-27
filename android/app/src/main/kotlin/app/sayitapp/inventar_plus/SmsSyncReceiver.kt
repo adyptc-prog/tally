@@ -9,7 +9,7 @@ import org.json.JSONArray
 
 /**
  * Ascultă SMS-urile primite și stochează în coadă pe cele cu prefix INV:
- * (mesaje de sincronizare trimise de celălalt dispozitiv Inventar+).
+ * (mesaje de sincronizare trimise de celălalt dispozitiv Tally).
  * Sunt acceptate doar mesajele de la partenerul de sincronizare configurat.
  *
  * Flutter citește coada la pornire și la revenire în foreground via

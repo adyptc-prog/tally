@@ -11,7 +11,7 @@ import java.util.Date
 import java.util.Locale
 
 /**
- * Backup / restore al datelor Inventar+ (vezi BackupFormat) într-un singur
+ * Backup / restore al datelor Tally (vezi BackupFormat) într-un singur
  * folder ales de utilizator prin Storage Access Framework — pe stick-ul USB
  * sau în memoria telefonului. Același folder e folosit și de backup-ul
  * automat zilnic (InventarBackupWorker).
@@ -207,7 +207,7 @@ object BackupManager {
      * 2. copie de siguranță a stării curente (before_restore.invbackup, intern);
      * 3. înlocuirea datelor + identitatea de licență.
      *
-     * Inventar+ nu are alarme native (alertele de stoc pleacă imediat, la
+     * Tally nu are alarme native (alertele de stoc pleacă imediat, la
      * mișcarea de stoc), deci nu e nimic de anulat sau de reprogramat. Coada de
      * sincronizare SMS nu se golește — s-ar pierde mesajele de la partener.
      */

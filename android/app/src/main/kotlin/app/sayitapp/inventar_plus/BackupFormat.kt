@@ -5,7 +5,7 @@ import org.json.JSONObject
 import java.security.MessageDigest
 
 /**
- * Formatul fișierului de backup Inventar+ (.invbackup) — logică pură, fără
+ * Formatul fișierului de backup Tally (.invbackup) — logică pură, fără
  * Android, testabilă pe JVM.
  *
  * Datele aplicației stau în SharedPreferences (nu în SQLite ca la Fidelio),
@@ -89,10 +89,10 @@ object BackupFormat {
         val root = try {
             JSONObject(content)
         } catch (_: Exception) {
-            throw InvalidBackupException(tr("Fișierul nu este un backup Inventar+.", "The file is not an Inventar+ backup."))
+            throw InvalidBackupException(tr("Fișierul nu este un backup Tally.", "The file is not a Tally backup."))
         }
         if (root.optString("app") != APP_ID) {
-            throw InvalidBackupException(tr("Fișierul nu este un backup Inventar+.", "The file is not an Inventar+ backup."))
+            throw InvalidBackupException(tr("Fișierul nu este un backup Tally.", "The file is not a Tally backup."))
         }
         val version = root.optInt("formatVersion", -1)
         if (version < 1 || version > FORMAT_VERSION) {
